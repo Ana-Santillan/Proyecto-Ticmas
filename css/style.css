@@ -1,15 +1,20 @@
-body{
+body {
     background: rgb(245, 234, 255);
 }
 
-.colorBorde{
+.colorBorde {
     background: #DFCEDF;
 }
 
-.colorCheck{
+.colorCheck {
     background: #AA87A9;
 }
 
-.showinfo{
-  display: block!important;  
+.showinfo {
+    display: block !important;
+}
+
+.navColor{
+    background-color: black;
+    padding: 20px;
 }
