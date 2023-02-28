@@ -1,15 +1,74 @@
-body{
+body {
     background: rgb(245, 234, 255);
 }
 
-.colorBorde{
+.colorBorde {
     background: #DFCEDF;
 }
 
-.colorCheck{
+.colorCheck {
     background: #AA87A9;
 }
 
-.showinfo{
-  display: block!important;  
+.showinfo {
+    display: block !important;
 }
+
+.navColor{
+    background-color: black;
+    padding: 20px;
+}
+
+.content-descarga{
+    width: 100%;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background: #DFCEDF;
+    text-align: center;
+    border: 2px solid #AA87A9;
+}
+
+.descarga-ahora{
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 20px;
+    background: #AA87A9;
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+.descarga-ahora:hover{
+    opacity: 0.9;
+    color: aliceblue;
+}
+
+.btn-descarga{
+    display: inline-block;
+    padding: 15px 25px;
+    background: #AA87A9;
+    color: aliceblue;
+    border: none;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+    outline: 0px;
+    cursor: pointer;
+}
+.btn-descarga:hover{
+    opacity: 0.9;
+    color: aliceblue;
+}
+
+.generate-pdf{
+    /* display: none; */
+    /* position: absolute; */
+    top: 2.2rem;
+    left: 0;
+    font-size: 1.2rem;
+    color: aliceblue;
+    cursor: pointer;
+}
+/* .generate-pdf:hover{
+    color: #DFCEDF;
+} */
