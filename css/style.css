@@ -36,6 +36,7 @@ body {
     background: #AA87A9;
     color: aliceblue;
     border-radius: 5px;
+    border: none;
 }
 
 .descarga-ahora:hover{
@@ -60,15 +61,7 @@ body {
     color: aliceblue;
 }
 
-.generate-pdf{
-    /* display: none; */
-    /* position: absolute; */
-    top: 2.2rem;
-    left: 0;
-    font-size: 1.2rem;
-    color: aliceblue;
-    cursor: pointer;
+.centrarBoton{
+    display: flex;
+    justify-content: center;
 }
-/* .generate-pdf:hover{
-    color: #DFCEDF;
-} */

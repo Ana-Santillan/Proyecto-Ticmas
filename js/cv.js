@@ -15,32 +15,6 @@ function printPage() {
     window.print();
 }
 
-var boton = document.getElementById("download");
-var contador = 15;
-var etiqueta = document.createElement("p");
-
-etiqueta.innerHTML = "<b> 15 segundos para descargar.</b>"
-var id;
-
-boton.parentNode.replaceChild(etiqueta, boton);
-
-function descarga() {
-    this.style.display = "none";
-    id = window.setInterval(function () {
-        contador--;
-        if (contador < 0) {
-            etiqueta.parentNode.removeChild(boton, etiqueta);
-            window.clearInterval(id);
-        }
-        else {
-            etiqueta.innerHTML = + contador.toString() + "<b> segundos para descargar.</b>";
-        }
-    }, 1000)
-};
-
-var clickbtn = document.getElementById("btn");
-clickbtn.onclick = descarga;
-
 // Area cv
 let areaCv = document.getElementById("area-cv");
 
@@ -50,7 +24,7 @@ let opt = {
     margin: 0,
     filename: 'Cv-Ana-Santillan.pdf',
     image: { type: 'jpeg', quality: 0.98 },
-    html2canvas: { scale: 4 },
+    html2canvas: { scale: 6 },
     jsPDF: { format: 'a4', orientation: 'portrait' }
 };
 
@@ -59,7 +33,8 @@ function generateResume() {
 }
 generateResume()
 
-// resumeButton.addEventListener("click", () =>{
-//     generateResume();
-//     setTimeout(10000)
-// })
+resumeButton.addEventListener("click", () =>{
+    generateResume();
+    setTimeout(10000)
+});
+
